@@ -1,0 +1,25 @@
+{
+  "dataset_version": "ds-72cce1c231a6",
+  "created_utc": "2026-10-27T01:49:51.947849+00:00",
+  "files_sha256": {
+    "alerts_test_2018.csv": "3e6c7f28a9d679724564a0dcdb83145b175e77546ca0126f602a00f369339cbd",
+    "config.json": "e33acc2bd8240faf7cc7c95cb17d603e9a104538af3a29ca9f1bd6ff8e96ceec",
+    "models/forecast_load.txt": "2632cfe8c33050382e72ae22307a0666313e73ea0f23ed64d20308c921fe49f0",
+    "models/forecast_solar.txt": "79b3146fae097934e5c07fa5668b5aa60b36c7aec58a847616cf779902fc3c98",
+    "models/forecast_wind.json": "e2031e1d790c01e8ba69216054b40020a19fc5408c7b27494dac5f365eec2a54",
+    "models/nowcast_load.txt": "e550b08866ac4b3b108de795d7d0471aa86d05fb2d7837945564c730db6d09fd",
+    "models/nowcast_solar.txt": "f1174dbe95fa102b99fe1bb2530a85135fe159521e5ea00fd80b39ea6b51dd51",
+    "models/nowcast_wind.txt": "10bac983eb7d05e1ce70ed0a2507ef5bb034e335092a5f58d3fdd458be3283a5",
+    "parity_anomaly_test.parquet": "4940f68c70237e01c9fa8d0bdca130e5f071ceb592566fd798668d9c954889f8",
+    "parity_forecast.parquet": "690b5ed5d5f3e5feffa6d991173ed79f9fca91d8ff4894ae4e4fe8eaa0666847",
+    "reference_data.parquet": "eabc40ec1eb0ba7401a2992e9b3fe1898e941cceae6aa34fca47a5425a96fce2"
+  },
+  "trained_with": {
+    "python": "3.13.17",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1"
+  }
+}

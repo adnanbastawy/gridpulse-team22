@@ -1,0 +1,41 @@
+artifact_path: file:///content/gridpulse_outputs/mlartifacts/models/m-f9651b348b354b79a12219a580d0af03/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.17
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.17.2
+model_id: m-f9651b348b354b79a12219a580d0af03
+model_size_bytes: 2680
+model_uuid: m-f9651b348b354b79a12219a580d0af03
+prompts: null
+run_id: a6f7257d2a90419f99bf4e1702f38dcd
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "hour_sin", "required": true}, {"type": "double",
+    "name": "hour_cos", "required": true}, {"type": "double", "name": "month_sin",
+    "required": true}, {"type": "double", "name": "month_cos", "required": true},
+    {"type": "integer", "name": "day_of_week", "required": true}, {"type": "long",
+    "name": "is_weekend", "required": true}, {"type": "double", "name": "sun_elevation_deg",
+    "required": true}, {"type": "double", "name": "lag_48h", "required": true}, {"type":
+    "double", "name": "lag_72h", "required": true}, {"type": "double", "name": "lag_168h",
+    "required": true}, {"type": "double", "name": "lag_336h", "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-27 01:47:49.183567'

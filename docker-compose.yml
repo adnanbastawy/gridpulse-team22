@@ -1,0 +1,32 @@
+# docker compose up --build           -> API on :8000 (docs at /docs), app on :8501
+# docker compose --profile mlops up   -> also the MLflow UI on :5000
+name: gridpulse
+
+x-build: &build
+  context: .
+  args:
+    BASE_IMAGE: ${BASE_IMAGE:-python:3.13-slim}
+
+services:
+  api:
+    build: { <<: *build, dockerfile: docker/api.Dockerfile }
+    image: gridpulse-api:1.0.0
+    ports: ["8000:8000"]
+    restart: unless-stopped
+
+  ui:
+    build: { <<: *build, dockerfile: docker/ui.Dockerfile }
+    image: gridpulse-ui:1.0.0
+    environment:
+      GRIDPULSE_API_URL: http://api:8000
+    ports: ["8501:8501"]
+    depends_on:
+      api: { condition: service_healthy }
+    restart: unless-stopped
+
+  mlflow:
+    profiles: ["mlops"]
+    build: { <<: *build, dockerfile: docker/mlflow.Dockerfile }
+    image: gridpulse-mlflow:1.0.0
+    volumes: ["./mlflow:/content/gridpulse_outputs"]
+    ports: ["5000:5000"]

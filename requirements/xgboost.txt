@@ -1,0 +1,2 @@
+# Only needed if a future retraining picks XGBoost as a production model (format "xgboost_json")
+xgboost-cpu==3.4.1
