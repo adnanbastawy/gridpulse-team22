@@ -1,4 +1,4 @@
-# GridPulse — 48-hour forecasting and anomaly intelligence for Spain's grid
+# GridPulse - 48-hour forecasting and anomaly intelligence for Spain's grid
 
 **SIC 8 · AI Track · Project 04 (Renewable Generation Yield & Grid Load Anomaly Intelligence) · Team 22**
 
@@ -17,9 +17,8 @@ Grid dispatchers need two things every day: a forecast of **load, solar and wind
 **Honest limit:** the operator's forecast is far better because it uses weather forecasts this dataset does not contain. Our forecast is an independent second opinion and the expectation behind the alerts. Full discussion: notebook Parts 3–5.
 
 ## Screenshots
-| Overview | Forecast + SHAP | Anomalies | Business |
-|---|---|---|---|
-| ![](docs/screenshots/1_overview.png) | ![](docs/screenshots/2_forecast.png) | ![](docs/screenshots/3_anomalies.png) | ![](docs/screenshots/4_business.png) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ![](docs/screenshots/1.png) | ![](docs/screenshots/2.png) | ![](docs/screenshots/3.png) | ![](docs/screenshots/4.png) | ![](docs/screenshots/5.png) | ![](docs/screenshots/6.png) | ![](docs/screenshots/7.png) | ![](docs/screenshots/8.png) | ![](docs/screenshots/9.png) | ![](docs/screenshots/10.png) | ![](docs/screenshots/11.png) | ![](docs/screenshots/12.png) | ![](docs/screenshots/13.png) |
 
 ## Architecture
 
@@ -115,7 +114,7 @@ scripts/sync_artifacts.py               bring a new notebook run into the repo
 ```
 
 ## Data
-[Hourly energy demand, generation and weather — Spain 2015–2018](https://www.kaggle.com/datasets/nicholasjhana/energy-consumption-generation-prices-and-weather) (CC0). Sources: ENTSO-E (energy), Red Eléctrica (prices), OpenWeather (5 cities). Splits: train 2015–2016, validation 2017, test 2018, with 48-hour gaps between them.
+[Hourly energy demand, generation and weather - Spain 2015–2018](https://www.kaggle.com/datasets/nicholasjhana/energy-consumption-generation-prices-and-weather) (CC0). Sources: ENTSO-E (energy), Red Eléctrica (prices), OpenWeather (5 cities). Splits: train 2015–2016, validation 2017, test 2018, with 48-hour gaps between them.
 
 ## Limitations
 - No weather forecasts: the operator forecast remains much more accurate; wind is the weakest signal (R² ≈ 0.1).
@@ -124,4 +123,8 @@ scripts/sync_artifacts.py               bring a new notebook run into the repo
 - The data stops at 2018; Spain's solar capacity has grown a lot since, so the models must be retrained before any use on current data.
 
 ## Team contributions
-_Fill in each member's responsibilities and the components they built (required by the handbook)._
+1. Omnia Ragab
+2. Mai Mahmoud 
+3. Khalid Waleed
+4. Mohamed Ali
+5. Adnan Bastawy
