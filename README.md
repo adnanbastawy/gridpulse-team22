@@ -17,8 +17,12 @@ Grid dispatchers need two things every day: a forecast of **load, solar and wind
 **Honest limit:** the operator's forecast is far better because it uses weather forecasts this dataset does not contain. Our forecast is an independent second opinion and the expectation behind the alerts. Full discussion: notebook Parts 3–5.
 
 ## Screenshots
-|---|---|---|---|---|---|---|---|---|---|---|
-| ![](docs/screenshots/1.png) | ![](docs/screenshots/2.png) | ![](docs/screenshots/3.png) | ![](docs/screenshots/4.png) | ![](docs/screenshots/5.png) | ![](docs/screenshots/6.png) | ![](docs/screenshots/7.png) | ![](docs/screenshots/8.png) | ![](docs/screenshots/9.png) | ![](docs/screenshots/10.png) | ![](docs/screenshots/11.png) | ![](docs/screenshots/12.png) | ![](docs/screenshots/13.png) |
+|  |  |  |  |
+| :---: | :---: | :---: | :---: |
+| ![](docs/screenshots/1.jpeg) | ![](docs/screenshots/2.jpeg) | ![](docs/screenshots/3.jpeg) | ![](docs/screenshots/4.jpeg) |
+| ![](docs/screenshots/5.jpeg) | ![](docs/screenshots/6.jpeg) | ![](docs/screenshots/7.jpeg) | ![](docs/screenshots/8.jpeg) |
+| ![](docs/screenshots/9.jpeg) | ![](docs/screenshots/10.jpeg) | ![](docs/screenshots/11.jpeg) | ![](docs/screenshots/12.jpeg) |
+| ![](docs/screenshots/13.jpeg) | | | |
 
 ## Architecture
 
